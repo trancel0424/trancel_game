@@ -165,35 +165,43 @@ function trancel_turn(){
 }
 
 function trancel_algo(a,b,c){
-  a=a.toString(2);
-  b=b.toString(2);
-  c=c.toString(2);
+/*  var a_tmp=a.toString(2);
+  var b_tmp=b.toString(2);
+  var c_tmp=c.toString(2);*/
 
   var x = a^b^c;
 
-  if(x===0){
+  if(x==0){
     var flag=0;
     var max=a;
     if(max<b){max=b; flag=1;}
     if(max<c){max=c; flag=2;}
     if(flag===0){left_num-=1;}
-    if(flag===1){middle_num-=1;}
-    if(flag===2){right_num-=1;}
+    else if(flag===1){middle_num-=1;}
+    else if(flag===2){right_num-=1;}
+    else{alert("error!! code=1 トランセルに報告下さい");}
   }
   else{
-    j = 0;
-    if (a>(a^x)){
-      a=a^x;
-      left_num=parseInt(a,2);
+    /*
+    if (a_tmp>(a_tmp^x)){
+      left_num=parseInt(a_tmp^x,2);
     }
-    else if(b>(b^x)){
-      b=b^x;
-      middle_num=parseInt(b,2);
+    else if(b_tmp>(b_tmp^x)){
+      middle_num=parseInt(b_tmp^x,2);
+    }
+    else if(c_tmp>(c_tmp^x)){
+      right_num=parseInt(c_tmp^x,2);
     }
     else{
-      c=c^x;
-      right_num=parseInt(c,2);
-    }
+      alert("error! code=2 トランセルに報告ください")
+    }*/
+
+    if(a>(a^x)){left_num=a^x;}
+    else if(b>(b^x)){middle_num=b^x;}
+    else if(c>(c^x)){right_num=c^x;}
+    else{alert("error code=2");}
+
   }
+
   num_kousin();
 }
