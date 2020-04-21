@@ -6,10 +6,10 @@ window.onload=function(){
   left_num=Math.floor(Math.random()*14+2);
   do{
     middle_num=Math.floor(Math.random()*14+2);
-  }while(left_num==middle_num);
+  }while(left_num===middle_num);
   do{
     right_num=Math.floor(Math.random()*14+2);
-  }while(right_num==middle_num || right_num==left_num);
+  }while(right_num===middle_num || right_num===left_num);
   num_kousin();
 }
 
@@ -85,7 +85,7 @@ function player_turn(){
 }
 
 function left_dec(){
-  if(left_num==0){
+  if(left_num===0){
     txt_kousin("その山はもう減らせません！");
   }
   else{
@@ -105,7 +105,7 @@ function left_dec_number(){
 }
 
 function middle_dec(){
-  if(middle_num==0){
+  if(middle_num===0){
     txt_kousin("その山はもう減らせません！");
   }
   else{
@@ -123,7 +123,7 @@ function middle_dec_number(){
 }
 
 function right_dec(){
-  if(right_num==0){
+  if(right_num===0){
     txt_kousin("その山はもう減らせません！");
   }
   else{
@@ -141,7 +141,7 @@ function right_dec_number(){
 }
 
 function trancel_turn(){
-  if(right_num==0 && middle_num==0 && left_num==0){
+  if(right_num===0 && middle_num===0 && left_num===0){
     trancel_speak("俺の負けじゃけ......");
     txt_kousin("あなたの勝ちです！！おめでとう！！");
     btn1kousin("(눈_눈)......","");
@@ -150,7 +150,7 @@ function trancel_turn(){
   }
   else{
     trancel_algo(left_num,middle_num,right_num);
-    if(right_num==0 && middle_num==0 && left_num==0){
+    if(right_num===0 && middle_num===0 && left_num===0){
       trancel_speak("俺の勝ち！！！！");
       txt_kousin("あなたの負けです");
       btn1kousin("(눈_눈)やーい","");
@@ -171,14 +171,14 @@ function trancel_algo(a,b,c){
 
   var x = a^b^c;
 
-  if(x==0){
+  if(x===0){
     var flag=0;
     var max=a;
     if(max<b){max=b; flag=1;}
     if(max<c){max=c; flag=2;}
-    if(flag==0){left_num-=1;}
-    if(flag==1){middle_num-=1;}
-    if(flag==2){right_num-=1;}
+    if(flag===0){left_num-=1;}
+    if(flag===1){middle_num-=1;}
+    if(flag===2){right_num-=1;}
   }
   else{
     j = 0;
