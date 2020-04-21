@@ -4,8 +4,12 @@ right_num=0;
 
 window.onload=function(){
   left_num=Math.floor(Math.random()*6+2);
-  middle_num=Math.floor(Math.random()*6+2);
-  right_num=Math.floor(Math.random()*6+2);
+  do{
+    middle_num=Math.floor(Math.random()*6+2);
+  }while(left_num==middle_num);
+  do{
+    right_num=Math.floor(Math.random()*6+2);
+  }while(right_num==middle_num || right_num==left_num);
   num_kousin();
 }
 
