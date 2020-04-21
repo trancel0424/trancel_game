@@ -1,0 +1,60 @@
+.contents{
+  width: 600px;
+  height: 350px;
+  margin: 0 auto;
+  background-color: #DDFFDD;
+  position: relative;
+}
+
+footer{
+  width: 600px;
+  height: 100px;
+  background-color: #DDFFDD;
+  margin: 0 auto;
+}
+
+#txt_up{
+  padding-top:70px;
+  text-align: center;
+}
+#txt_now{
+  text-align: center;
+}
+#trancel{
+  text-align: center;
+  padding-top: 60px;
+  font-weight: bold;
+  font-family: "YuGothic";
+}
+img{
+  position: absolute;
+  top: 150px;
+  left: 400px;
+}
+footer{
+  text-align: center;
+}
+.btn{
+  display: inline-block;
+  text-align: center;
+  padding: 10px;
+  width: 120px;
+  height: 40px;
+  color: white;
+  background-color: #4488BB;
+  border-radius: 10px;
+  text-decoration: none;
+  box-shadow: 0 5px navy;
+}
+.btn:active{
+  box-shadow: none;
+  position: relative;
+  top: 5px;
+}
+
+.return{
+  text-align: center;
+  display: block;
+  width: 120px;
+  margin: 30px auto;
+}

@@ -1,0 +1,67 @@
+.contents{
+  width: 600px;
+  /*height: 350px;*/
+  margin: 0 auto;
+  background-color: #DDFFDD;
+  position: relative;
+}
+
+footer{
+  text-align: center;
+  width: 600px;
+  background-color: #DDFFDD;
+  margin: 0 auto;
+}
+#trancel{
+  text-align: center;
+  padding-top: 50px;
+  font-weight: bold;
+  font-family: "YuGothic";
+}
+img{
+  position: absolute;
+  top: -40px;
+  left: 30px;
+}
+
+.wrapper{
+  text-align: center;
+  width: 500px;
+  margin: 0 auto;
+}
+.mountain{
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  padding: 0 30px;
+  font-size: 80px;
+  font-weight: bold;
+}
+
+.btn{
+  display: inline-block;
+  text-align: center;
+  padding: 10px;
+  width: 120px;
+  height: 40px;
+  color: white;
+  background-color: #4488BB;
+  border-radius: 10px;
+  text-decoration: none;
+  box-shadow: 0 5px navy;
+}
+.btn:active{
+  box-shadow: none;
+  position: relative;
+  top: 5px;
+}
+
+.return{
+  text-align: center;
+  display: block;
+  width: 120px;
+  margin: 30px auto;
+}
+#txt{
+  padding: 0 0 10px 0;
+}

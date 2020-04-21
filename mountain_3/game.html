@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>game</title>
+    <link rel="stylesheet" href="./game.css">
+    <script type="text/javascript" src="main.js"></script>
+  </head>
+  <body>
+    <div class="contents">
+      <p id="trancel">先行、後攻を選ぶじゃけ!</p>
+      <img src="../n11.png" alt="読めんかったわ" width=200px height=200px>
+      <div class="wrapper">
+        <p id="left" class="mountain">0</p>
+        <p id="middle" class="mountain">0</p>
+        <p id="right" class="mountain">0</p>
+      </div>
+      <footer>
+        <p id="txt">先攻、後攻を選んでください</p>
+        <div id="btn-wrapper">
+          <input id="btn1" class="btn" type="button" value="先行" onclick="senkou();"/>
+          <input id="btn2" class="btn" type="button" value="後攻" onclick="koukou();"/>
+        </div>
+        <a class="return" href="./mountain.html">戻る</a>
+      </footer>
+    </div>
+  </body>
+</html>

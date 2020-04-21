@@ -1,0 +1,51 @@
+.contents{
+  width: 600px;
+  height: 450px;
+  margin: 0 auto;
+  background-color: #DDFFDD;
+}
+
+.btn{
+  text-align: center;
+  padding: 10px;
+  margin: 15px auto;
+  width: 120px;
+  height: 20px;
+  display: block;
+  color: white;
+  background-color: #4488BB;
+  border-radius: 10px;
+  text-decoration: none;
+  box-shadow: 0 5px navy;
+}
+.btn:active{
+  box-shadow: none;
+  margin: 20px auto -5px auto;
+}
+
+footer{
+  background-color: #DDFFDD;
+  width: 600px;
+  margin: 0 auto;
+}
+
+.btn2{
+  text-align: center;
+  display: block;
+  width: 120px;
+  font-size: 18px;
+  margin: 0 auto;
+}
+
+h1{
+  padding: 10px;
+  text-align: center;
+}
+p{
+  text-align: center;
+}
+
+span{
+  font-weight: bold;
+  color: red;
+}
