@@ -168,12 +168,13 @@ function trancel_algo(a,b,c){
   var x = a^b^c;
 
   if(x==0){
-    max=a;
-    if(max<b){max=b;}
-    if(max<c){max=c;}
-    if(max==a){left_num-=1;}
-    if(max==b){middle_num-=1;}
-    if(max==c){right_num-=1;}
+    var flag=0;
+    var max=a;
+    if(max<b){max=b; flag=1;}
+    if(max<c){max=c; flag=2;}
+    if(flag==0){left_num-=1;}
+    if(flag==1){middle_num-=1;}
+    if(flag==2){right_num-=1;}
   }
   else{
     j = 0;
