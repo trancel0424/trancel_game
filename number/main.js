@@ -28,7 +28,7 @@ function senkou(){
   btn1kousin(now_num);
   btn2kousin(now_num);
   btn3kousin(now_num);
-  trancel("お前が先行じゃけ!始めるじゃけ!");
+  trancel("お前が先行だ!始めてください!");
 }
 function koukou(){
   const div2 = document.getElementById("btn-wrapper");
@@ -60,13 +60,13 @@ function btn3kousin(n){
 
 function trancel_turn(n){
   if(n>=out_num){
-    trancel("俺の勝ち！なんで負けたか明日まで考えとくじゃけ！！");
+    trancel("俺の勝ち！なんで負けたか明日まで考えといてください！！");
     youlose1();
     youlose2();
     youlose3();
   }
   else if(n==out_num-1){
-    trancel(`${out_num}、俺の負けじゃけ......`);
+    trancel(`${out_num}、俺の負けです......`);
     youwin1();
     youwin2();
     youwin3();
@@ -75,15 +75,15 @@ function trancel_turn(n){
     var sep=(out_num-now_num-1)%4;
     if(sep==0) sep=Math.floor(Math.random()*3+1); //勝てないときはやけくそ
     if(sep==1){
-      trancel(`俺のターンじゃけ、${n+1}！`);
+      trancel(`俺のターン！！！${n+1}！`);
       now_num+=1;
     }
     else if (sep==2) {
-      trancel(`俺のターンじゃけ、${n+1},${n+2}！`);
+      trancel(`俺のターン！！！${n+1},${n+2}！`);
       now_num+=2;
     }
     else {
-      trancel(`俺のターンじゃけ、${n+1},${n+2},${n+3}！`);
+      trancel(`俺のターン！！！${n+1},${n+2},${n+3}！`);
       now_num+=3;
     }
     now_num_print(now_num);
