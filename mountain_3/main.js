@@ -56,7 +56,7 @@ function btn3kousin(txt,func){
 }
 
 function senkou(){
-  trancel_speak("お前の番じゃけ！");
+  trancel_speak("お前の番！");
   const div = document.getElementById("btn-wrapper");
   const input1 = document.createElement("input");
   input1.setAttribute("type","button");
@@ -142,7 +142,7 @@ function right_dec_number(){
 
 function trancel_turn(){
   if(right_num===0 && middle_num===0 && left_num===0){
-    trancel_speak("俺の負けじゃけ......");
+    trancel_speak("俺の負け......");
     txt_kousin("あなたの勝ちです！！おめでとう！！");
     btn1kousin("(눈_눈)......","");
     btn2kousin("(눈_눈)......","");
@@ -158,7 +158,7 @@ function trancel_turn(){
       btn3kousin("(눈_눈)やーい","");
     }
     else{
-      trancel_speak("はい！お前の番じゃけ！");
+      trancel_speak("はい！お前の番！");
       player_turn();
     }
   }
